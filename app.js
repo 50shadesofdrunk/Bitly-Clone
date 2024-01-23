@@ -1,8 +1,13 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
+app.use(express.json())
+app.use(express.static('front'))
+
+app.post('/url', (req, res) => {
+console.log(req.body)
+res.send('you suck')
+
 });
 
 const port = 3000;

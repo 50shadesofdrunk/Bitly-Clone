@@ -7,6 +7,7 @@ app.use(express.static('front'))
 app.post('/url', (req, res) => {
 console.log(req.body)
 res.send('you suck')
+console.log
 
 });
 
